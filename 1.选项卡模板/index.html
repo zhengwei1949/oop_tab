@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		body{
+			background-color: #323232;
+			font-size:12px;
+			font-family: "微软雅黑";
+		}
+	</style>
+	<link rel="stylesheet" href="tab.css">
+</head>
+<body>
+	<div class="tab">
+		<ul class="tab-nav">
+			<li><a href="javascript:void(0);">新闻</a></li>
+			<li><a href="javascript:void(0);">娱乐</a></li>
+			<li><a href="javascript:void(0);">电影</a></li>
+			<li><a href="javascript:void(0);">科技</a></li>
+		</ul>
+		<div class="content-wrap">
+			<div class="content-item">内容1</div>
+			<div class="content-item">内容2</div>
+			<div class="content-item">内容3</div>
+			<div class="content-item">内容4</div>
+		</div>
+	</div>
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="tab.js"></script>
+	<script>
+		//我们不用关注过程是如何实现，主要关注的是最终结果是怎么使用的
+		$(function(){
+			var tab1 = new Tab('.tab');
+		});
+	</script>
+</body>
+</html>
+
+
+
+
